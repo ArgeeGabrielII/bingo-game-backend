@@ -39,7 +39,7 @@ command to run if program contains helper info
 
 Contributors names and contact info
 
-ex. Argee Gabriel II
+* Argee Gabriel II
 
 ## Version History
 
