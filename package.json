@@ -4,7 +4,7 @@
   "description": "Backend Processor of BINGO Game",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./src --recursive"
   },
   "author": "Argee Gabriel II",
   "license": "ISC",
@@ -12,5 +12,10 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
   }
 }
