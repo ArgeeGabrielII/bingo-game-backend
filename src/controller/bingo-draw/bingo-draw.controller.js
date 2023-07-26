@@ -6,7 +6,7 @@ const getHistory = require('./bingo-draw-history.gql');
 exports.drawBingo = async (req, res) => {
     // Variable Declarations
     const group_id = req.body.group_id;
-    var genNumber, chkHist;
+    var genNumber = 0, chkHist = [];
 
     // Generate Number Draw
     do {

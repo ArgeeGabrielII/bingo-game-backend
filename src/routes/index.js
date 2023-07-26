@@ -14,11 +14,11 @@ const routes = (app) => {
 
     // @route   POST /generate-card
     // @desc    Generate Bingo Card
-    router.post("/generate-card", conBingo.generateBingoCard);
+    router.post("/generate-card", conBingo.generateBingoCard(req, res));
 
     // @route   POST /bingo-draw
     // @desc    Draw Number and Save to Hasura
-    router.post("/bingo-draw", conBingoDraw.drawBingo);
+    router.post("/bingo-draw", conBingoDraw.drawBingo(req, res));
 
     app.use(bodyParser.json()); 
     app.use(router);

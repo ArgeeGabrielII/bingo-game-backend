@@ -1,11 +1,16 @@
-exports.generateBingoCard = async () => {
-    return bingoCardArray = {
+exports.generateBingoCard = async (req, res) => {
+    const group_id = req;
+    console.log(`    [LOG] GroupID: ${group_id}`);
+
+    const bingoCardArray = {
         "B": await generateColumnNumbers(1, 15),
         "I": await generateColumnNumbers(16, 30),
         "N": await generateColumnNumbers(31, 45),
         "G": await generateColumnNumbers(46, 60),
         "O": await generateColumnNumbers(61, 75)
     }
+
+    return bingoCardArray;
 }
 
 const generateColumnNumbers = async (min, max) => {
