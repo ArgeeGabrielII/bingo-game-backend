@@ -2,10 +2,21 @@ const express = require("express");
 const router = express.Router();
 const bodyParser = require('body-parser');
 
-const conBingo = require("../controller/bingo.controller");
+const conBingo = require('../controller/bingo-card/bingo.controller');
+const conBingoDraw = require('../controller/bingo-draw/bingo-draw.controller');
 
 const routes = (app) => {
-    router.post("/generateCard", conBingo.generateBingoCard);
+
+    // @route   GET /health
+    // @desc    Application Health Check
+
+    // @route   POST /generate-card
+    // @desc    Generate Bingo Card
+    router.post("/generate-card", conBingo.generateBingoCard);
+
+    // @route   POST /bingo-draw
+    // @desc    Draw Number and Save to Hasura
+    router.post("/bingo-draw", conBingoDraw.drawBingo);
 
     app.use(bodyParser.json()); 
     app.use(router);
