@@ -3,8 +3,9 @@ const header = require('../../processor/header.gql');
 
 const getHistory = require('./bingo-draw-history.gql');
 
-exports.drawBingo = async (group_id) => {
+exports.drawBingo = async (req, res) => {
     // Variable Declarations
+    const group_id = req.body.group_id;
     var genNumber, chkHist;
 
     // Generate Number Draw
