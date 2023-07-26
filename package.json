@@ -4,7 +4,8 @@
   "description": "Backend Processor of BINGO Game",
   "main": "server.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=development mocha ./src --recursive"
+    "test": "cross-env NODE_ENV=development mocha ./src --recursive",
+    "test-prod": "cross-env NODE_ENV=production mocha ./src --recursive"
   },
   "author": "Argee Gabriel II",
   "license": "ISC",
