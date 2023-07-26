@@ -13,8 +13,8 @@ var testWithinRange = (arr, min, max) => {
 }
 
 describe('bingo.controller.js', () => {
-    context('generateBingoCard', () => {
-        it('generate and test a generated bingo card', async () => {
+    context('Generate Bingo Card', () => {
+        it('Generate and Test Bingo Card', async () => {
             const bingo_card = await conBingo.generateBingoCard();
             console.log(`      [LOG] Generated Bingo Card: ${JSON.stringify(bingo_card)}`);
 
