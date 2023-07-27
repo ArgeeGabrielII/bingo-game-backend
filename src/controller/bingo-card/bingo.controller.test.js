@@ -18,7 +18,14 @@ describe('bingo.controller.js', () => {
             console.log(`    [CROSS ENV] NODE_ENV: ${process.env.NODE_ENV}`);
         })
         it('Generate and Test Bingo Card', async () => {
-            const bingo_card = await conBingo.generateBingoCard();
+            const req = {
+                "body": {
+                    "user_id": 1,
+                    "group_id": 1
+                }
+            };
+
+            const bingo_card = await conBingo.generateBingoCard(req);
             console.log(`      [LOG] Generated Bingo Card: ${JSON.stringify(bingo_card)}`);
 
             console.log(`      [LOG] Test to Check if Array per Letter is equal to 5`);
