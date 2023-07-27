@@ -6,6 +6,10 @@ Simple overview of use/purpose.
 
 An in-depth paragraph about your project and overview of use.
 
+![Site Map](https://github.com/ArgeeGabrielII/bingo-game-backend/blob/main/document/Site%20Map.png?raw=true)
+
+![High Level Diagram](https://github.com/ArgeeGabrielII/bingo-game-backend/blob/main/document/High%20Level%20Diagram.png)
+
 ## Getting Started
 
 ### Dependencies
