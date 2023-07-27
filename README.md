@@ -21,8 +21,8 @@ The Bingo Game Backend is built to support a real-time multiplayer Bingo game. I
 ## Requirements
 Before running the Bingo Game Backend, ensure you have the following installed:
 
-Node.js (at least version 12)
-npm (Node Package Manager)
+- Node.js (at least version 18)
+- npm (Node Package Manager)
 
 ## Installation
 
