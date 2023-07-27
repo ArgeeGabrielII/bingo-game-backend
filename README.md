@@ -29,7 +29,7 @@ npm (Node Package Manager)
 Clone this repository to your local machine:
 
 ```bash
-git clone <https://github.com/ArgeeGabrielII/bingo-game-backend.git
+git clone https://github.com/ArgeeGabrielII/bingo-game-backend.git
 ```
 
 Navigate to the project directory:
